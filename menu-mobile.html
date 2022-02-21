@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .mobile-menu {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 24px;
+        }
+
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            /*margin-bottom: 24px;*/
+        }
+
+        .mobile-menu ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-top: 24px;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 24px;
+        }
+
+        .email {
+            font-size: var(--sm);
+            font-weight: 350 !important;
+        }
+
+        .mobile-menu ul:nth-child(1) {
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .sing-out {
+            color: var(--hospital-green) !important;
+            font-size: var(--sm);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mobile-menu"> 
+        <div>
+
+        <ul>
+            <li>
+                <a href="">Categorias</a>
+            </li>
+            <li>
+                <a href="">Todas</a>
+            </li>
+            <li>
+                <a href="">Vintage</a>
+            </li>
+            <li>
+                <a href="">Cat</a>
+            </li>
+            <li>
+                <a href="">Aviador</a>
+            </li>
+            <li>
+                <a href="">Clásica</a>
+            </li>
+            <li>
+                <a href="">Lentes de Sol</a>
+            </li>
+        </ul>
+        
+        <ul>
+            <li>
+                <a href="">Mi orden</a>
+            </li>
+            <li>
+                <a href="">Mi cuenta</a>
+            </li>
+        </ul>
+        </div>
+        
+        <ul>
+            <li>
+                <a class="email" href="">platzi@heywin.com.co</a>
+            </li>
+            <li>
+                <a class="sing-out" href="">Mi cuenta</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .my-order {
+            display: flex;
+            height: 100vh;
+            place-items: center;
+            justify-content: center;
+        }
+
+        .container-arrow {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .arrow {
+            width: 25px;
+            margin-right: 14px;
+        }
+
+        h2 {
+            font-size: var(--lg);
+
+        }
+
+        .my-order-container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+        }
+
+        .my-order-content {
+            display: flex;
+            justify-content: space-between;
+            background: var(--text-input-field);
+            margin-bottom: 24px;
+            margin-top: 12px;
+            border-radius: 15px;
+            padding: 0 24px;
+            align-items: center;
+        }
+
+        .date,
+        .price {
+            font-weight: bold;
+        }
+
+
+        .item {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .item p:nth-child(2) {
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            text-align: center;
+        }
+
+        .valor {
+            font-weight: bold;
+        }
+
+        .img {
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+        }
+
+        .delete {
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+        }
+
+        .delete:hover {
+            cursor: pointer;
+        }
+
+        .container-valor {
+            display: flex;
+            align-items: center;
+        }
+
+        .primary-button {
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+
+        .add-to-cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+
+            <div class="container-arrow">
+                <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/120/120872.png" alt="">
+                <h2>Shopping cart</h2>
+            </div>
+
+
+            <div class="item">
+                <img class="img" src="https://cf.shopee.com.co/file/016c14beda9f4cf14e959345347f4c60" alt="" />
+                <p>Bike</p>
+                <div class="container-valor">
+                    <p class="valor">$ 120.000</p>
+                    <img class="delete" src="https://cdn-icons-png.flaticon.com/512/109/109602.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="my-order-content">
+                <div>
+                    <p class="date">02.01.2022</p>
+                </div>
+                <p class="price">$ 990.000</p>
+            </div>
+
+            <button class="primary-button add-to-cart">
+                Checkout
+            </button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
